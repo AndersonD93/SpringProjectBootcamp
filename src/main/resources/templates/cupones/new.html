@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" 
+		xmlns="http://www.w3.org/1999/xhtml"
+      	xmlns:th="http://www.thymeleaf.org"
+      >
+      
+	<head>
+		<meta charset="UTF-8">
+		<title>Spring mvc + thymeleaft + spring securyty: ABM Cupones</title>
+		<link rel="stylesheet" th:href="@{/css/bootstrap/themes/cerulean/bootstrap.css}" href="../static/css/bootstrap/themes/cerulean/bootstrap.css">
+	</head>
+	
+	<body>
+		<main>
+			<div th:insert="navbar.html"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h1>Alta Cupones </h1>
+								<form
+								action="#"
+								class="row g-1 need-validations was validated"
+								th:action="@{/cupones/save}"
+								th:object="${CUPON}"
+								method="post"
+								>
+								
+								<div class="form-group">
+								<label for="codigo">Codigo</label>
+								<input type="text"
+									th:field=>
+								
+								
+								</form>
+			
+			
+		</main>		
+	</body>
+	<div th:insert="script.html"></div>
+</html>

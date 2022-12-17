@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en" 
+		xmlns="http://www.w3.org/1999/xhtml"
+      	xmlns:th="http://www.thymeleaf.org">
+<html>
+	<table>
+		<tr th:each= "cupon : ${CUPONES}">
+			<td th:text="$cupon{cupon.id}"></td>
+			<td th:text="$cupon{cupon.codigo}"></td>
+
+</html>
